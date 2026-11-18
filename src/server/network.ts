@@ -2,6 +2,10 @@ import os from 'node:os';
 import QRCode from 'qrcode';
 import type { LanNetworkInfo } from '../shared/types.js';
 
+function isContainerBridge(name: string): boolean {
+  return /^(docker\d*|br-[0-9a-f]+|veth|virbr|cni)/i.test(name);
+}
+
 function scoreLanInterface(name: string, ip: string): number {
   let score = 0;
   if (name.startsWith('en0')) score += 50;
@@ -19,13 +23,13 @@ function scoreLanInterface(name: string, ip: string): number {
 
 export function getLanNetworkInfo(port: number): LanNetworkInfo {
   const interfaces = os.networkInterfaces();
-  const candidates: Array<{ name: string; ip: string; score: number }> = [];
+  const rawCandidates: Array<{ name: string; ip: string; score: number }> = [];
 
   for (const [name, addrs] of Object.entries(interfaces)) {
     if (!addrs) continue;
     for (const addr of addrs) {
       if (addr.family === 'IPv4' && !addr.internal) {
-        candidates.push({
+        rawCandidates.push({
           name,
           ip: addr.address,
           score: scoreLanInterface(name, addr.address),
@@ -33,6 +37,9 @@ export function getLanNetworkInfo(port: number): LanNetworkInfo {
       }
     }
   }
+
+  const nonContainer = rawCandidates.filter((c) => !isContainerBridge(c.name));
+  const candidates = nonContainer.length > 0 ? nonContainer : rawCandidates;
 
   candidates.sort((a, b) => b.score - a.score);
 
