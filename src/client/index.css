@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --velvet-bg: #0b0d13;
+    --velvet-surface: #141824;
+    --velvet-gold: #d4af37;
+    --velvet-gold-light: #f3e09f;
+    --velvet-emerald: #0d3b2e;
+  }
+
+  html,
+  body {
+    background-color: #0b0d13;
+    color: #f5f2eb;
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC',
+      'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
+    overscroll-behavior-y: contain;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.velvet-felt {
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(20, 74, 58, 0.45) 0%, rgba(11, 13, 19, 0.92) 72%),
+    #0b0d13;
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.gold-glow {
+  box-shadow:
+    0 0 28px rgba(212, 175, 55, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Commercial GPU micro-animations */
+@keyframes cardDeal {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes flipIn {
+  0% {
+    opacity: 0;
+    transform: rotateY(88deg) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes diceTumble {
+  0% {
+    transform: rotate(-18deg) scale(0.86);
+  }
+  55% {
+    transform: rotate(10deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes pulseGold {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 22px 4px rgba(212, 175, 55, 0.28);
+  }
+}
+
+.animate-card-deal {
+  animation: cardDeal 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-flip-in {
+  animation: flipIn 0.36s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-dice-tumble {
+  animation: diceTumble 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 2.2s ease-in-out infinite;
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.28);
+  border-radius: 9999px;
+}

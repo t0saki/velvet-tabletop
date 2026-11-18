@@ -1,0 +1,150 @@
+{
+  "welcome_stage": {
+    "zh": "/audio/voices/zh/welcome_stage.mp3",
+    "en": "/audio/voices/en/welcome_stage.mp3"
+  },
+  "game_starting": {
+    "zh": "/audio/voices/zh/game_starting.mp3",
+    "en": "/audio/voices/en/game_starting.mp3"
+  },
+  "night_vision": {
+    "zh": "/audio/voices/zh/night_vision.mp3",
+    "en": "/audio/voices/en/night_vision.mp3"
+  },
+  "team_vote": {
+    "zh": "/audio/voices/zh/team_vote.mp3",
+    "en": "/audio/voices/en/team_vote.mp3"
+  },
+  "quest_start": {
+    "zh": "/audio/voices/zh/quest_start.mp3",
+    "en": "/audio/voices/en/quest_start.mp3"
+  },
+  "quest_success": {
+    "zh": "/audio/voices/zh/quest_success.mp3",
+    "en": "/audio/voices/en/quest_success.mp3"
+  },
+  "quest_fail": {
+    "zh": "/audio/voices/zh/quest_fail.mp3",
+    "en": "/audio/voices/en/quest_fail.mp3"
+  },
+  "assassin_phase": {
+    "zh": "/audio/voices/zh/assassin_phase.mp3",
+    "en": "/audio/voices/en/assassin_phase.mp3"
+  },
+  "good_wins": {
+    "zh": "/audio/voices/zh/good_wins.mp3",
+    "en": "/audio/voices/en/good_wins.mp3"
+  },
+  "evil_wins": {
+    "zh": "/audio/voices/zh/evil_wins.mp3",
+    "en": "/audio/voices/en/evil_wins.mp3"
+  },
+  "night_fall": {
+    "zh": "/audio/voices/zh/night_fall.mp3",
+    "en": "/audio/voices/en/night_fall.mp3"
+  },
+  "guard_wake": {
+    "zh": "/audio/voices/zh/guard_wake.mp3",
+    "en": "/audio/voices/en/guard_wake.mp3"
+  },
+  "wolf_wake": {
+    "zh": "/audio/voices/zh/wolf_wake.mp3",
+    "en": "/audio/voices/en/wolf_wake.mp3"
+  },
+  "witch_wake": {
+    "zh": "/audio/voices/zh/witch_wake.mp3",
+    "en": "/audio/voices/en/witch_wake.mp3"
+  },
+  "seer_wake": {
+    "zh": "/audio/voices/zh/seer_wake.mp3",
+    "en": "/audio/voices/en/seer_wake.mp3"
+  },
+  "dawn_peace": {
+    "zh": "/audio/voices/zh/dawn_peace.mp3",
+    "en": "/audio/voices/en/dawn_peace.mp3"
+  },
+  "dawn_death": {
+    "zh": "/audio/voices/zh/dawn_death.mp3",
+    "en": "/audio/voices/en/dawn_death.mp3"
+  },
+  "hunter_shot": {
+    "zh": "/audio/voices/zh/hunter_shot.mp3",
+    "en": "/audio/voices/en/hunter_shot.mp3"
+  },
+  "day_speech": {
+    "zh": "/audio/voices/zh/day_speech.mp3",
+    "en": "/audio/voices/en/day_speech.mp3"
+  },
+  "vote_exile": {
+    "zh": "/audio/voices/zh/vote_exile.mp3",
+    "en": "/audio/voices/en/vote_exile.mp3"
+  },
+  "villagers_win": {
+    "zh": "/audio/voices/zh/villagers_win.mp3",
+    "en": "/audio/voices/en/villagers_win.mp3"
+  },
+  "wolves_win": {
+    "zh": "/audio/voices/zh/wolves_win.mp3",
+    "en": "/audio/voices/en/wolves_win.mp3"
+  },
+  "new_hand": {
+    "zh": "/audio/voices/zh/new_hand.mp3",
+    "en": "/audio/voices/en/new_hand.mp3"
+  },
+  "flop": {
+    "zh": "/audio/voices/zh/flop.mp3",
+    "en": "/audio/voices/en/flop.mp3"
+  },
+  "turn": {
+    "zh": "/audio/voices/zh/turn.mp3",
+    "en": "/audio/voices/en/turn.mp3"
+  },
+  "river": {
+    "zh": "/audio/voices/zh/river.mp3",
+    "en": "/audio/voices/en/river.mp3"
+  },
+  "all_in": {
+    "zh": "/audio/voices/zh/all_in.mp3",
+    "en": "/audio/voices/en/all_in.mp3"
+  },
+  "showdown": {
+    "zh": "/audio/voices/zh/showdown.mp3",
+    "en": "/audio/voices/en/showdown.mp3"
+  },
+  "auction_start": {
+    "zh": "/audio/voices/zh/auction_start.mp3",
+    "en": "/audio/voices/en/auction_start.mp3"
+  },
+  "bankrupt": {
+    "zh": "/audio/voices/zh/bankrupt.mp3",
+    "en": "/audio/voices/en/bankrupt.mp3"
+  },
+  "tycoon_winner": {
+    "zh": "/audio/voices/zh/tycoon_winner.mp3",
+    "en": "/audio/voices/en/tycoon_winner.mp3"
+  },
+  "start_drawing": {
+    "zh": "/audio/voices/zh/start_drawing.mp3",
+    "en": "/audio/voices/en/start_drawing.mp3"
+  },
+  "start_guessing": {
+    "zh": "/audio/voices/zh/start_guessing.mp3",
+    "en": "/audio/voices/en/start_guessing.mp3"
+  },
+  "exhibition_reveal": {
+    "zh": "/audio/voices/zh/exhibition_reveal.mp3",
+    "en": "/audio/voices/en/exhibition_reveal.mp3"
+  },
+  "undercover_vote": {
+    "zh": "/audio/voices/zh/undercover_vote.mp3",
+    "en": "/audio/voices/en/undercover_vote.mp3"
+  },
+  "civilians_win": {
+    "zh": "/audio/voices/zh/civilians_win.mp3",
+    "en": "/audio/voices/en/civilians_win.mp3"
+  },
+  "undercover_wins": {
+    "zh": "/audio/voices/zh/undercover_wins.mp3",
+    "en": "/audio/voices/en/undercover_wins.mp3"
+  }
+}
